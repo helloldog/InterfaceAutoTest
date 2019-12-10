@@ -1,0 +1,9 @@
+2019-06-25 17:04:42: -- 分析开始 On File Change, After Delay
+2019-06-25 17:04:42: 变更：2， 冲突：0， 复制时间：0， 复制状态：0， 错误： 0, All: 185
+2019-06-25 17:04:42: Left to Right: Copy File: 2 
+2019-06-25 17:04:42: == 同步开始由 On File Change, After Delay
+2019-06-25 17:04:42: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/.idea/workspace.xml' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/.idea/workspace.xml' (86,282)
+- 错误: Error copying file: 操作成功完成。  (error 0)
+2019-06-25 17:04:42: 新建复制 'E:/src/interfaceTest/InterfaceTestAutoParking/report/20190625170431-Case1_basic-自动用例报告.html' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/report/20190625170431-Case1_basic-自动用例报告.html' (0)
+2019-06-25 17:04:42: == 同步完成. 历时: 00:00:00, 速度: 0 字节/s, 完成: 1, 错误: 1
+2019-06-25 17:04:42: 

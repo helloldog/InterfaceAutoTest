@@ -1,0 +1,2402 @@
+2019-06-12 16:27:38,754 INFO [com.parking_1x.Runjar] - 
+
+
+
+
+
+
+
+
+~~~~~~~~~~~开始测试~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+2019-06-12 16:27:38,757 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第1个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:27:40,802 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+ "sn":"WEIJL-1-L01",
+ "mac":"WEIJL-MAC-L01",
+ "guid":"01testc2-0afd-4c18-9a3b-57e0e4774560",
+ "deviceBerthCode":"1000001",
+ "inoutType":"1",
+ "plateNumber":"测ATE001",
+ "plateColor":"1",
+ "carColor":"3",
+ "carStyle":"1款",
+ "carLogo":"本田",
+ "carType":"1",
+ "carSize":"1",
+ "inoutTime":"2019-5-20 11:00:00",
+ "plateCredible":"0.1",
+ "actionCredible":"0.9",
+ "memo":"新框架测试",
+ "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:27:42,910 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第2个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:27:45,031 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/confirmCarData.htm
+Body：
+{
+    "id":"01testc2-0afd-4c18-9a3b-57e0e4774560",
+    "plateNumberModify":"测ATE001",
+    "plateColorModify":1,
+    "berthCode":"1000001",
+    "confirmType":0,
+    "isForce":"0",
+    "dataType":0,
+    "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":"审核成功！","data":[]}
+2019-06-12 16:27:45,033 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第3个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:28:00,095 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%01testc2-0afd-4c18-9a3b-57e0e4774560%'  and   json like '%artificial%';
+断言：artificial
+返回：{addtime=2019-06-12 16:27:59.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"targetEvtGuid":"01testc2-0afd-4c18-9a3b-57e0e4774560","targetEvtType":"evt.car.in","parkingActId":"01testc2-0afd-4c18-9a3b-57e0e4774560","userType":0,"userCode":"superadmin","userName":"超级用户","evt":"evt.artificial","evtGuid":"b639b8be-73e4-47da-9c8f-c27a07f5c18c"}}
+2019-06-12 16:28:05,096 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第4个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:28:05,110 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%01testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.in%';
+断言：测ATE001
+返回：{addtime=2019-06-12 16:27:56.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bWyEYIh-AAAAAMTv_rQ232.jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1D/rBIUxlz_bWyEehqVAAAAADuz5HU774.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bWyECjP7AAAAAKY-u3Q840.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bWyEYIh-AAAAAMTv_rQ232.jpg"],"timeIn":"2019-05-20 11:00:00","parkingActId":"01testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-20 11:00:00","plateNumber":"测ATE001","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":0.1,"actionCredible":0.9,"carSize":1,"carColor":3,"carLogo":"本田","evt":"evt.car.in","evtGuid":"01testc2-0afd-4c18-9a3b-57e0e4774560","parkingAbnormalType":1}}
+2019-06-12 16:28:10,115 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第5个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:28:12,143 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+ "sn":"WEIJL-1-L01",
+ "mac":"WEIJL-MAC-L01",
+ "guid":"02testc2-0afd-4c18-9a3b-57e0e4774560",
+ "deviceBerthCode":"1000001",
+ "inoutType":"1",
+ "plateNumber":"测ATE002",
+ "plateColor":"1",
+ "carColor":"3",
+ "carStyle":"1款",
+ "carLogo":"本田",
+ "carType":"1",
+ "carSize":"1",
+ "inoutTime":"2019-5-20 11:00:00",
+ "plateCredible":"0.9",
+ "actionCredible":"0.9",
+ "memo":"新框架测试",
+ "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:28:14,226 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第6个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:28:16,354 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/manualCarOut/manualCarOut.htm
+Body：
+{"guid":"02testc2-0afd-4c18-9a3b-57e0e4774560","time":"2019-5-27 12:00:00"}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:28:16,355 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第7个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:28:31,421 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%02testc2-0afd-4c18-9a3b-57e0e4774560%'  and   json like '%artificial%';
+断言：superadmin
+返回：{addtime=2019-06-12 16:28:29.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"targetEvtGuid":"f98709a1-12e7-4143-bcae-3af425611afc","targetEvtType":"evt.car.out","parkingActId":"02testc2-0afd-4c18-9a3b-57e0e4774560","userType":0,"userCode":"superadmin","userName":"超级用户","evt":"evt.artificial","evtGuid":"ac2ecde0-ff94-4192-abd8-ed7605973b41"}}
+2019-06-12 16:28:36,423 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第8个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:28:36,436 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%02testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.in%';
+断言：测ATE002
+返回：{addtime=2019-06-12 16:28:21.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEaBelAAAAAMTv_rQ376.jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEKi1yAAAAADuz5HU396.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuETZWFAAAAAKY-u3Q328.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEaBelAAAAAMTv_rQ376.jpg"],"timeIn":"2019-05-20 11:00:00","parkingActId":"02testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-20 11:00:00","plateNumber":"测ATE002","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":0.9,"actionCredible":0.9,"carSize":1,"carColor":3,"carLogo":"本田","evt":"evt.car.in","evtGuid":"02testc2-0afd-4c18-9a3b-57e0e4774560","parkingAbnormalType":1}}
+2019-06-12 16:28:41,438 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第9个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:28:41,452 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%02testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.out%';
+断言：测ATE002
+返回：{addtime=2019-06-12 16:28:26.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlOut":"http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0At5OEbi2hAAAAACB9NuY64..jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEKi1yAAAAADuz5HU396.bmp","http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0At5OEbi2hAAAAACB9NuY64..jpg"],"timeOut":"2019-05-27 12:00:00","parkingActId":"02testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-27 12:00:00","plateNumber":"测ATE002","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":1.0,"actionCredible":1.0,"carSize":1,"carColor":3,"carLogo":"本田","evt":"evt.car.out","evtGuid":"f98709a1-12e7-4143-bcae-3af425611afc","parkingAbnormalType":0}}
+2019-06-12 16:28:46,454 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第10个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:28:46,470 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%02testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.complete%';
+断言：测ATE002
+返回：{addtime=2019-06-12 16:28:32.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEaBelAAAAAMTv_rQ376.jpg","picUrlOut":"http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0At5OEbi2hAAAAACB9NuY64..jpg","picUrlArrIn":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEKi1yAAAAADuz5HU396.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuETZWFAAAAAKY-u3Q328.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEaBelAAAAAMTv_rQ376.jpg"],"picUrlArrOut":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEKi1yAAAAADuz5HU396.bmp","http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0At5OEbi2hAAAAACB9NuY64..jpg"],"timeIn":"2019-05-20 11:00:00","timeOut":"2019-05-27 12:00:00","carInStatus":1,"carOutStatus":1,"parkingActId":"02testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-27 12:00:00","plateNumber":"测ATE002","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","geo":"0 0","evt":"evt.car.complete","evtGuid":"b7766b95-b694-427f-b55d-b4967606e49f","parkingAbnormalType":1}}
+2019-06-12 16:28:51,474 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第11个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:28:53,509 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+ "sn":"WEIJL-1-L01",
+ "mac":"WEIJL-MAC-L01",
+ "guid":"03testc2-0afd-4c18-9a3b-57e0e4774560",
+ "deviceBerthCode":"1000001",
+ "inoutType":"1",
+ "plateNumber":"测ATE003",
+ "plateColor":"1",
+ "carColor":"3",
+ "carStyle":"1款",
+ "carLogo":"本田",
+ "carType":"1",
+ "carSize":"1",
+ "inoutTime":"2019-5-20 11:00:00",
+ "plateCredible":"0.9",
+ "actionCredible":"0.9",
+ "memo":"新框架测试",
+ "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:28:55,578 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第12个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:28:57,752 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/manualCarOut/manualCarOut.htm
+Body：
+{"userCode":"Ningbo_123","guid":"03testc2-0afd-4c18-9a3b-57e0e4774560","time":"2019-5-27 12:00:00"}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:28:57,757 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第13个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:29:02,788 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%03testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.in%';
+断言：测ATE003
+返回：{addtime=2019-06-12 16:29:02.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEKtG0AAAAAMTv_rQ308.jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEIBipAAAAADuz5HU827.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEKAfMAAAAAKY-u3Q960.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEKtG0AAAAAMTv_rQ308.jpg"],"timeIn":"2019-05-20 11:00:00","parkingActId":"03testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-20 11:00:00","plateNumber":"测ATE003","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":0.9,"actionCredible":0.9,"carSize":1,"carColor":3,"carLogo":"本田","evt":"evt.car.in","evtGuid":"03testc2-0afd-4c18-9a3b-57e0e4774560","parkingAbnormalType":1}}
+2019-06-12 16:29:07,791 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第14个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:29:07,804 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%03testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.out%';
+断言：测ATE003
+返回：{addtime=2019-06-12 16:29:07.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlOut":"http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0At7yEH_26AAAAACB9NuY58..jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEIBipAAAAADuz5HU827.bmp","http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0At7yEH_26AAAAACB9NuY58..jpg"],"timeOut":"2019-05-27 12:00:00","parkingActId":"03testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-27 12:00:00","plateNumber":"测ATE003","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":1.0,"actionCredible":1.0,"carSize":1,"carColor":3,"carLogo":"本田","evt":"evt.car.out","evtGuid":"5ac3d6b1-78e5-4c8e-9f3f-9e2045a08b2c","parkingAbnormalType":0}}
+2019-06-12 16:29:12,805 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第15个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:29:12,817 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%03testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.complete%';
+断言：测ATE003
+返回：{addtime=2019-06-12 16:29:12.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEKtG0AAAAAMTv_rQ308.jpg","picUrlOut":"http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0At7yEH_26AAAAACB9NuY58..jpg","picUrlArrIn":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEIBipAAAAADuz5HU827.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEKAfMAAAAAKY-u3Q960.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEKtG0AAAAAMTv_rQ308.jpg"],"picUrlArrOut":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEIBipAAAAADuz5HU827.bmp","http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0At7yEH_26AAAAACB9NuY58..jpg"],"timeIn":"2019-05-20 11:00:00","timeOut":"2019-05-27 12:00:00","carInStatus":1,"carOutStatus":1,"parkingActId":"03testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-27 12:00:00","plateNumber":"测ATE003","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","geo":"0 0","evt":"evt.car.complete","evtGuid":"55281856-180b-4953-b6b4-07ddc0aa4f11","parkingAbnormalType":1}}
+2019-06-12 16:29:17,824 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第16个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:29:17,836 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%03testc2-0afd-4c18-9a3b-57e0e4774560%'  and   json like '%artificial%';
+断言：Ningbo_123
+返回：{addtime=2019-06-12 16:29:10.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"targetEvtGuid":"5ac3d6b1-78e5-4c8e-9f3f-9e2045a08b2c","targetEvtType":"evt.car.out","parkingActId":"03testc2-0afd-4c18-9a3b-57e0e4774560","userType":1,"userCode":"Ningbo_123","userName":"外部管理员：Ningbo_123","evt":"evt.artificial","evtGuid":"c734b6e3-e22a-43dc-8d8c-4334fe6552c9"}}
+2019-06-12 16:29:22,837 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第17个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:29:24,878 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+ "sn":"WEIJL-1-L01",
+ "mac":"WEIJL-MAC-L01",
+ "guid":"04testc2-0afd-4c18-9a3b-57e0e4774560",
+ "deviceBerthCode":"1000001",
+ "inoutType":"1",
+ "plateNumber":"测ATE004",
+ "plateColor":"1",
+ "carColor":"3",
+ "carStyle":"1款",
+ "carLogo":"本田",
+ "carType":"1",
+ "carSize":"1",
+ "inoutTime":"2019-5-20 11:00:00",
+ "plateCredible":"0.9",
+ "actionCredible":"0.9",
+ "memo":"新框架测试",
+ "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:29:26,963 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第18个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:29:29,001 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/manualCarOut/cancelCarInData.htm
+Body：
+{"guid":"04testc2-0afd-4c18-9a3b-57e0e4774560"}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:29:29,004 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第19个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:29:34,092 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE    json like '%artificial%';
+断言：superadmin
+返回：{addtime=2019-06-12 16:29:30.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"targetEvtGuid":"09f4fb0f-a4ce-4488-b6cf-b21fa834da1d","targetEvtType":"evt.cancel","userType":0,"userCode":"superadmin","userName":"超级用户","evt":"evt.artificial","evtGuid":"555b1402-b93d-4347-9895-c6d0bc2eb705"}}
+2019-06-12 16:29:39,094 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第20个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:29:41,129 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+ "sn":"WEIJL-1-L01",
+ "mac":"WEIJL-MAC-L01",
+ "guid":"05testc2-0afd-4c18-9a3b-57e0e4774560",
+ "deviceBerthCode":"1000001",
+ "inoutType":"1",
+ "plateNumber":"测ATE005",
+ "plateColor":"1",
+ "carColor":"3",
+ "carStyle":"1款",
+ "carLogo":"本田",
+ "carType":"1",
+ "carSize":"1",
+ "inoutTime":"2019-5-20 11:00:00",
+ "plateCredible":"0.9",
+ "actionCredible":"0.9",
+ "memo":"新框架测试",
+ "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:29:43,218 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第21个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:29:45,274 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/manualCarOut/cancelCarInData.htm
+Body：
+{"userCode":"Ningbo_12388","guid":"05testc2-0afd-4c18-9a3b-57e0e4774560"}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:29:45,275 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第22个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:29:50,305 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE    json like '%artificial%';
+断言：Ningbo_12388
+返回：{addtime=2019-06-12 16:29:45.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"targetEvtGuid":"b3eb901e-aef4-4ff6-9e40-7660ccd71fb7","targetEvtType":"evt.cancel","userType":1,"userCode":"Ningbo_12388","userName":"外部管理员：Ningbo_12388","evt":"evt.artificial","evtGuid":"c7d78981-0556-408a-8c27-f984a173f794"}}
+2019-06-12 16:29:55,308 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第23个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:29:57,329 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 09:09:04",
+"deviceType":"0",
+"guid": "6e74ede3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测AQ4H52R",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 09:09:04",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是入场"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:29:59,396 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第24个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:30:09,435 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%6e74ede3-1065-4826-b780-9c137da92bcd%'and   json like '%evt.car.in%';
+断言：测AQ4H52R
+返回：{addtime=2019-06-12 16:30:08.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEbXLWAAAAAMTv_rQ622.jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEOHLKAAAAADuz5HU884.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEdXITAAAAAKY-u3Q571.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEbXLWAAAAAMTv_rQ622.jpg"],"timeIn":"2019-05-31 09:09:04","parkingActId":"6e74ede3-1065-4826-b780-9c137da92bcd","happenTime":"2019-05-31 09:09:04","plateNumber":"测AQ4H52R","plateColor":2,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":1.0,"actionCredible":1.0,"carSize":0,"carColor":5,"carLogo":"零垃d1k","evt":"evt.car.in","evtGuid":"6e74ede3-1065-4826-b780-9c137da92bcd","parkingAbnormalType":0}}
+2019-06-12 16:30:14,439 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第25个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:30:16,465 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 11:09:04",
+"deviceType":"0",
+"guid": "7testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"0",
+"plateNumber":"测AQ4H52R",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 11:09:04",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是出场"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:30:18,529 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第26个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:30:33,580 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%7testde3-1065-4826-b780-9c137da92bcd%'and   json like '%evt.car.out%';
+断言：测AQ4H52R
+返回：{addtime=2019-06-12 16:30:28.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlOut":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeESpY_AAAAAMTv_rQ632.jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeEDNBsAAAAADuz5HU138.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeEKx0hAAAAAKY-u3Q327.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeESpY_AAAAAMTv_rQ632.jpg"],"timeOut":"2019-05-31 11:09:04","parkingActId":"6e74ede3-1065-4826-b780-9c137da92bcd","happenTime":"2019-05-31 11:09:04","plateNumber":"测AQ4H52R","plateColor":2,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":1.0,"actionCredible":1.0,"carSize":0,"carColor":5,"carLogo":"零垃d1k","evt":"evt.car.out","evtGuid":"7testde3-1065-4826-b780-9c137da92bcd","parkingAbnormalType":0}}
+2019-06-12 16:30:38,584 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第27个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:30:38,598 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%测AQ4H52R%'and   json like '%evt.car.complete%';
+断言：测AQ4H52R
+返回：{addtime=2019-06-12 16:30:34.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEbXLWAAAAAMTv_rQ622.jpg","picUrlOut":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeESpY_AAAAAMTv_rQ632.jpg","picUrlArrIn":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEOHLKAAAAADuz5HU884.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEdXITAAAAAKY-u3Q571.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEbXLWAAAAAMTv_rQ622.jpg"],"picUrlArrOut":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeEDNBsAAAAADuz5HU138.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeEKx0hAAAAAKY-u3Q327.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeESpY_AAAAAMTv_rQ632.jpg"],"timeIn":"2019-05-31 09:09:04","timeOut":"2019-05-31 11:09:04","carInStatus":1,"carOutStatus":1,"parkingActId":"6e74ede3-1065-4826-b780-9c137da92bcd","happenTime":"2019-05-31 11:09:04","plateNumber":"测AQ4H52R","plateColor":2,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","geo":"0 0","evt":"evt.car.complete","evtGuid":"af43dc83-ee00-4743-8a68-556e75cb49b5","parkingAbnormalType":0}}
+2019-06-12 16:30:43,599 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第28个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:30:45,640 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测AQ4H52R"
+}
+断言：测AQ4H52R
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":2,"rows":[{"id":"7testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":0,"inoutTime":"2019-05-31 11:09:04","plateNumber":"测AQ4H52R","plateColor":2,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bgeEKx0hAAAAAKY-u3Q327.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bgeESpY_AAAAAMTv_rQ632.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bgeEDNBsAAAAADuz5HU138.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是出场","recordTime":"2019-06-12 16:30:03","confirmType":0,"confirmTime":"2019-06-12 16:30:03","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 16:30:18","parkingAbnormalType":0},{"id":"6e74ede3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 09:09:04","plateNumber":"测AQ4H52R","plateColor":2,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bfSEdXITAAAAAKY-u3Q571.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bfSEbXLWAAAAAMTv_rQ622.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bfSEOHLKAAAAADuz5HU884.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是入场","recordTime":"2019-06-12 16:29:44","confirmType":0,"confirmTime":"2019-06-12 16:29:44","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 16:29:57","parkingAbnormalType":0}]}}
+2019-06-12 16:30:45,647 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第29个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:30:47,680 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 15:16:17",
+"deviceType":"0",
+"guid": "10testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"无车牌",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 15:16:17",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是无车牌"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:30:49,741 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第30个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:30:51,786 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"WEIJL-1-L01"
+}
+断言：15:16:17
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"10testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 15:16:17","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bieEBMAEAAAAAKY-u3Q818.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bieECNdoAAAAAMTv_rQ023.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bieEUfb_AAAAADuz5HU598.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无车牌","recordTime":"2019-06-12 16:30:35","confirmType":0,"confirmTime":"2019-06-12 16:30:35","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 16:30:51,787 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第31个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:30:53,812 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 16:16:18",
+"deviceType":"0",
+"guid": "11testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"无牌车",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 16:16:18",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是无牌车"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:30:55,869 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第32个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:30:57,897 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"WEIJL-1-L01"
+}
+断言：16:16:18
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":2,"rows":[{"id":"11testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 16:16:18","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bi2EOwS7AAAAAKY-u3Q938.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bi2EYcUfAAAAAMTv_rQ689.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bi2Edjz5AAAAADuz5HU210.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 16:30:41","confirmType":0,"confirmTime":"2019-06-12 16:30:41","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"10testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 15:16:17","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bieEBMAEAAAAAKY-u3Q818.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bieECNdoAAAAAMTv_rQ023.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bieEUfb_AAAAADuz5HU598.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无车牌","recordTime":"2019-06-12 16:30:35","confirmType":0,"confirmTime":"2019-06-12 16:30:35","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 16:30:57,898 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第33个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:30:59,925 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 17:18:19",
+"deviceType":"0",
+"guid": "12testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 17:18:19",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是无牌车"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:31:01,983 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第34个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:04,016 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"WEIJL-1-L01"
+}
+断言： 17:18:19
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":3,"rows":[{"id":"12testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 17:18:19","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bjOEfaSWAAAAAKY-u3Q677.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bjOENzVrAAAAAMTv_rQ573.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bjOEMN25AAAAADuz5HU096.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 16:30:47","confirmType":0,"confirmTime":"2019-06-12 16:30:47","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"11testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 16:16:18","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bi2EOwS7AAAAAKY-u3Q938.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bi2EYcUfAAAAAMTv_rQ689.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bi2Edjz5AAAAADuz5HU210.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 16:30:41","confirmType":0,"confirmTime":"2019-06-12 16:30:41","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"10testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 15:16:17","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bieEBMAEAAAAAKY-u3Q818.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bieECNdoAAAAAMTv_rQ023.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bieEUfb_AAAAADuz5HU598.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无车牌","recordTime":"2019-06-12 16:30:35","confirmType":0,"confirmTime":"2019-06-12 16:30:35","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 16:30:48","parkingAbnormalType":0}]}}
+2019-06-12 16:31:04,017 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第35个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:06,053 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 18:19:20",
+"deviceType":"0",
+"guid": "13testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":null,
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 18:19:20",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是无牌车"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:31:08,105 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第36个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:10,137 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"WEIJL-1-L01"
+}
+断言：18:19:20
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":4,"rows":[{"id":"13testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 18:19:20","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bjmEK8FiAAAAAKY-u3Q455.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bjmENU8nAAAAAMTv_rQ449.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bjmEDnocAAAAADuz5HU034.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 16:30:53","confirmType":0,"confirmTime":"2019-06-12 16:30:53","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"12testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 17:18:19","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bjOEfaSWAAAAAKY-u3Q677.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bjOENzVrAAAAAMTv_rQ573.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bjOEMN25AAAAADuz5HU096.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 16:30:47","confirmType":0,"confirmTime":"2019-06-12 16:30:47","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"11testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 16:16:18","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bi2EOwS7AAAAAKY-u3Q938.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bi2EYcUfAAAAAMTv_rQ689.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bi2Edjz5AAAAADuz5HU210.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 16:30:41","confirmType":0,"confirmTime":"2019-06-12 16:30:41","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 16:30:53","parkingAbnormalType":0},{"id":"10testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 15:16:17","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bieEBMAEAAAAAKY-u3Q818.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bieECNdoAAAAAMTv_rQ023.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bieEUfb_AAAAADuz5HU598.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无车牌","recordTime":"2019-06-12 16:30:35","confirmType":0,"confirmTime":"2019-06-12 16:30:35","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 16:30:48","parkingAbnormalType":0}]}}
+2019-06-12 16:31:10,139 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第37个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:12,173 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 19:20:21",
+"deviceType":"0",
+"guid": "14testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 19:20:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是无牌车"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:31:14,259 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第38个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:16,286 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"WEIJL-1-L01"
+}
+断言：19:20:21
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":5,"rows":[{"id":"14testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 19:20:21","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bj-Ebj4zAAAAAKY-u3Q183.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bj-EO1TfAAAAAMTv_rQ843.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bj-EIbKQAAAAADuz5HU076.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 16:30:59","confirmType":0,"confirmTime":"2019-06-12 16:30:59","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"13testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 18:19:20","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bjmEK8FiAAAAAKY-u3Q455.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bjmENU8nAAAAAMTv_rQ449.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bjmEDnocAAAAADuz5HU034.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 16:30:53","confirmType":0,"confirmTime":"2019-06-12 16:30:53","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"12testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 17:18:19","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bjOEfaSWAAAAAKY-u3Q677.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bjOENzVrAAAAAMTv_rQ573.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bjOEMN25AAAAADuz5HU096.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 16:30:47","confirmType":0,"confirmTime":"2019-06-12 16:30:47","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 16:30:59","parkingAbnormalType":0},{"id":"11testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 16:16:18","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bi2EOwS7AAAAAKY-u3Q938.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bi2EYcUfAAAAAMTv_rQ689.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bi2Edjz5AAAAADuz5HU210.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 16:30:41","confirmType":0,"confirmTime":"2019-06-12 16:30:41","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 16:30:53","parkingAbnormalType":0},{"id":"10testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 15:16:17","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bieEBMAEAAAAAKY-u3Q818.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bieECNdoAAAAAMTv_rQ023.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bieEUfb_AAAAADuz5HU598.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无车牌","recordTime":"2019-06-12 16:30:35","confirmType":0,"confirmTime":"2019-06-12 16:30:35","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 16:30:48","parkingAbnormalType":0}]}}
+2019-06-12 16:31:16,291 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第39个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:18,327 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 20:20:21",
+"deviceType":"0",
+"guid": "15testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A12345678",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 20:20:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"车"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:31:20,382 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第40个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:22,413 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A12345678"
+}
+断言：测A12345678
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"15testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 20:20:21","plateNumber":"测A12345678","plateColor":2,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bkWEFxRDAAAAAKY-u3Q363.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bkWEZzTgAAAAAMTv_rQ091.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bkWERAKSAAAAADuz5HU005.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"车","recordTime":"2019-06-12 16:31:05","confirmType":0,"confirmTime":"2019-06-12 16:31:05","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 16:31:22,414 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第41个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:24,435 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 21:20:21",
+"deviceType":"0",
+"guid": "16testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A22223",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 21:20:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:31:26,489 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第42个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:28,530 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"A22223",
+     "plateColor":2
+}
+断言：测A22223
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"16testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 21:20:21","plateNumber":"测A22223","plateColor":2,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bkuEOt4pAAAAAKY-u3Q832.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bkuEHvydAAAAAMTv_rQ393.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bkuEXOqrAAAAADuz5HU872.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"","recordTime":"2019-06-12 16:31:11","confirmType":0,"confirmTime":"2019-06-12 16:31:11","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 16:31:28,531 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第43个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:30,555 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 22:20:21",
+"deviceType":"0",
+"guid": "17testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A22243",
+"plateColor":"15",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 22:20:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是无牌车"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:31:32,610 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第44个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:34,639 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A22243"
+
+}
+断言：测A22243
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"17testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 22:20:21","plateNumber":"测A22243","plateColor":15,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_blKEQ8XiAAAAAKY-u3Q205.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_blKEQkc6AAAAAMTv_rQ155.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_blKEFSoHAAAAADuz5HU594.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 16:31:17","confirmType":0,"confirmTime":"2019-06-12 16:31:17","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 16:31:34,640 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第45个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:36,692 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:20:21",
+"deviceType":"0",
+"guid": "18testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A44456",
+"plateColor":"中文",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 23:20:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"上传json数据解释出错!","memo":null,"data":null}
+2019-06-12 16:31:38,749 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第46个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:31:50,893 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A44456"
+
+}
+断言：暂无数据
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 16:31:50,894 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第47个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:02,967 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "19testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A44457",
+"plateColor":"EnglishTest",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 23:21:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"上传json数据解释出错!","memo":null,"data":null}
+2019-06-12 16:32:05,021 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第48个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:07,047 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A44457"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 16:32:07,052 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第49个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:09,071 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "20testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A44458",
+"plateColor":"#￥%……&",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 23:21:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"上传json数据解释出错!","memo":null,"data":null}
+2019-06-12 16:32:11,127 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第50个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:13,180 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A44458"
+
+}
+断言：A44458
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 16:32:13,181 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第51个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:15,198 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "21testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A44460",
+"plateColor":"",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 23:21:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"上传json数据解释出错!","memo":null,"data":null}
+2019-06-12 16:32:17,244 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第52个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:19,268 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A44460"
+
+}
+断言：测A44460
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 16:32:19,269 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第53个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:21,300 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "22testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A44461",
+"plateColor":null,
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 23:21:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:32:23,343 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第54个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:25,375 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A44461"
+
+}
+断言：测A44461
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"22testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 23:21:21","plateNumber":"测A44461","plateColor":null,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_cFGEFtxMAAAAAKY-u3Q340.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_cFGEQA03AAAAAMTv_rQ374.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_cFGEFWJ3AAAAADuz5HU464.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"","recordTime":"2019-06-12 16:32:08","confirmType":0,"confirmTime":"2019-06-12 16:32:08","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 16:32:25,376 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第55个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:27,398 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "23testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A44462",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 23:21:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 16:32:29,446 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第56个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:31,472 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A44462"
+
+}
+断言：测A44462
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"23testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 23:21:21","plateNumber":"测A44462","plateColor":null,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_cFeEUqKGAAAAAKY-u3Q117.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_cFeEajxuAAAAAMTv_rQ988.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_cFeEDptkAAAAADuz5HU020.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"","recordTime":"2019-06-12 16:32:14","confirmType":0,"confirmTime":"2019-06-12 16:32:14","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 16:32:31,474 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第57个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:33,491 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "24testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A88824",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-0x5-31 23:21:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"上传json数据解释出错!","memo":null,"data":null}
+2019-06-12 16:32:35,541 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第58个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:37,567 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A88824"
+
+}
+断言：测A88824
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 16:32:37,572 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第59个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:39,594 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "24testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A88824",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"上传json数据解释出错!","memo":null,"data":null}
+2019-06-12 16:32:41,642 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第60个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:43,666 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A88824"
+
+}
+断言：测A88824
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 16:32:43,667 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第61个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:45,682 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "24testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A88824",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"inoutTime不能为空!","memo":null,"data":null}
+2019-06-12 16:32:47,727 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第62个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:49,748 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A88824"
+
+}
+断言：测A88824
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 16:32:49,749 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第63个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:51,766 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "24testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A88824",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":null,
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"inoutTime不能为空!","memo":null,"data":null}
+2019-06-12 16:32:53,819 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第64个用例：~~~~~~~~~~~~
+
+
+2019-06-12 16:32:55,848 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A88824"
+
+}
+断言：测A88824
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 16:32:55,918 INFO [com.parking_1x.Runjar] - 
+
+~~~~~~~~~~~~测试完成，报告请查看：report目录，请直接关闭窗口~~~~~~~~~~~~
+2019-06-12 17:17:02,258 INFO [com.parking_1x.Runjar] - 
+
+
+
+
+
+
+
+
+~~~~~~~~~~~开始测试~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+2019-06-12 17:17:02,260 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第1个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:17:04,304 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+ "sn":"WEIJL-1-L01",
+ "mac":"WEIJL-MAC-L01",
+ "guid":"01testc2-0afd-4c18-9a3b-57e0e4774560",
+ "deviceBerthCode":"1000001",
+ "inoutType":"1",
+ "plateNumber":"测ATE001",
+ "plateColor":"1",
+ "carColor":"3",
+ "carStyle":"1款",
+ "carLogo":"本田",
+ "carType":"1",
+ "carSize":"1",
+ "inoutTime":"2019-5-20 11:00:00",
+ "plateCredible":"0.1",
+ "actionCredible":"0.9",
+ "memo":"新框架测试",
+ "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:17:06,467 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第2个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:17:08,538 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/confirmCarData.htm
+Body：
+{
+    "id":"01testc2-0afd-4c18-9a3b-57e0e4774560",
+    "plateNumberModify":"测ATE001",
+    "plateColorModify":1,
+    "berthCode":"1000001",
+    "confirmType":0,
+    "isForce":"0",
+    "dataType":0,
+    "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":"审核成功！","data":[]}
+2019-06-12 17:17:08,542 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第3个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:17:23,601 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%01testc2-0afd-4c18-9a3b-57e0e4774560%'  and   json like '%artificial%';
+断言：artificial
+返回：{addtime=2019-06-12 17:17:22.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"targetEvtGuid":"01testc2-0afd-4c18-9a3b-57e0e4774560","targetEvtType":"evt.car.in","parkingActId":"01testc2-0afd-4c18-9a3b-57e0e4774560","userType":0,"userCode":"superadmin","userName":"超级用户","evt":"evt.artificial","evtGuid":"c8545cbe-b98a-42fe-9a98-317c7ab756fa"}}
+2019-06-12 17:17:28,605 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第4个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:17:28,623 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%01testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.in%';
+断言：测ATE001
+返回：{addtime=2019-06-12 17:17:18.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bWyEYIh-AAAAAMTv_rQ232.jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1D/rBIUxlz_bWyEehqVAAAAADuz5HU774.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bWyECjP7AAAAAKY-u3Q840.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bWyEYIh-AAAAAMTv_rQ232.jpg"],"timeIn":"2019-05-20 11:00:00","parkingActId":"01testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-20 11:00:00","plateNumber":"测ATE001","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":0.1,"actionCredible":0.9,"carSize":1,"carColor":3,"carLogo":"本田","evt":"evt.car.in","evtGuid":"01testc2-0afd-4c18-9a3b-57e0e4774560","parkingAbnormalType":1}}
+2019-06-12 17:17:33,625 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第5个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:17:35,668 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+ "sn":"WEIJL-1-L01",
+ "mac":"WEIJL-MAC-L01",
+ "guid":"02testc2-0afd-4c18-9a3b-57e0e4774560",
+ "deviceBerthCode":"1000001",
+ "inoutType":"1",
+ "plateNumber":"测ATE002",
+ "plateColor":"1",
+ "carColor":"3",
+ "carStyle":"1款",
+ "carLogo":"本田",
+ "carType":"1",
+ "carSize":"1",
+ "inoutTime":"2019-5-20 11:00:00",
+ "plateCredible":"0.9",
+ "actionCredible":"0.9",
+ "memo":"新框架测试",
+ "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:17:37,762 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第6个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:17:39,916 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/manualCarOut/manualCarOut.htm
+Body：
+{"guid":"02testc2-0afd-4c18-9a3b-57e0e4774560","time":"2019-5-27 12:00:00"}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:17:39,917 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第7个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:17:54,968 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%02testc2-0afd-4c18-9a3b-57e0e4774560%'  and   json like '%artificial%';
+断言：superadmin
+返回：{addtime=2019-06-12 17:17:52.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"targetEvtGuid":"5245e77f-3bf6-49fc-bb96-8ea24757a005","targetEvtType":"evt.car.out","parkingActId":"02testc2-0afd-4c18-9a3b-57e0e4774560","userType":0,"userCode":"superadmin","userName":"超级用户","evt":"evt.artificial","evtGuid":"ef8a594a-922a-43f5-a636-43497a17a9e6"}}
+2019-06-12 17:17:59,973 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第8个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:17:59,988 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%02testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.in%';
+断言：测ATE002
+返回：{addtime=2019-06-12 17:17:49.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEaBelAAAAAMTv_rQ376.jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEKi1yAAAAADuz5HU396.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuETZWFAAAAAKY-u3Q328.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEaBelAAAAAMTv_rQ376.jpg"],"timeIn":"2019-05-20 11:00:00","parkingActId":"02testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-20 11:00:00","plateNumber":"测ATE002","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":0.9,"actionCredible":0.9,"carSize":1,"carColor":3,"carLogo":"本田","evt":"evt.car.in","evtGuid":"02testc2-0afd-4c18-9a3b-57e0e4774560","parkingAbnormalType":1}}
+2019-06-12 17:18:04,994 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第9个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:18:05,010 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%02testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.out%';
+断言：测ATE002
+返回：{addtime=2019-06-12 17:17:49.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlOut":"http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0AwyaEScL3AAAAACB9NuY33..jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEKi1yAAAAADuz5HU396.bmp","http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0AwyaEScL3AAAAACB9NuY33..jpg"],"timeOut":"2019-05-27 12:00:00","parkingActId":"02testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-27 12:00:00","plateNumber":"测ATE002","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":1.0,"actionCredible":1.0,"carSize":1,"carColor":3,"carLogo":"本田","evt":"evt.car.out","evtGuid":"5245e77f-3bf6-49fc-bb96-8ea24757a005","parkingAbnormalType":0}}
+2019-06-12 17:18:10,014 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第10个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:18:10,028 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%02testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.complete%';
+断言：测ATE002
+返回：{addtime=2019-06-12 17:17:54.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEaBelAAAAAMTv_rQ376.jpg","picUrlOut":"http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0AwyaEScL3AAAAACB9NuY33..jpg","picUrlArrIn":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEKi1yAAAAADuz5HU396.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuETZWFAAAAAKY-u3Q328.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEaBelAAAAAMTv_rQ376.jpg"],"picUrlArrOut":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bYuEKi1yAAAAADuz5HU396.bmp","http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0AwyaEScL3AAAAACB9NuY33..jpg"],"timeIn":"2019-05-20 11:00:00","timeOut":"2019-05-27 12:00:00","carInStatus":1,"carOutStatus":1,"parkingActId":"02testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-27 12:00:00","plateNumber":"测ATE002","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","geo":"0 0","evt":"evt.car.complete","evtGuid":"4660a2a7-b0de-4b00-9939-106444e94b1d","parkingAbnormalType":1}}
+2019-06-12 17:18:15,030 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第11个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:18:17,066 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+ "sn":"WEIJL-1-L01",
+ "mac":"WEIJL-MAC-L01",
+ "guid":"03testc2-0afd-4c18-9a3b-57e0e4774560",
+ "deviceBerthCode":"1000001",
+ "inoutType":"1",
+ "plateNumber":"测ATE003",
+ "plateColor":"1",
+ "carColor":"3",
+ "carStyle":"1款",
+ "carLogo":"本田",
+ "carType":"1",
+ "carSize":"1",
+ "inoutTime":"2019-5-20 11:00:00",
+ "plateCredible":"0.9",
+ "actionCredible":"0.9",
+ "memo":"新框架测试",
+ "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:18:19,152 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第12个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:18:21,322 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/manualCarOut/manualCarOut.htm
+Body：
+{"userCode":"Ningbo_123","guid":"03testc2-0afd-4c18-9a3b-57e0e4774560","time":"2019-5-27 12:00:00"}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:18:21,323 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第13个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:18:31,366 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%03testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.in%';
+断言：测ATE003
+返回：{addtime=2019-06-12 17:18:30.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEKtG0AAAAAMTv_rQ308.jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEIBipAAAAADuz5HU827.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEKAfMAAAAAKY-u3Q960.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEKtG0AAAAAMTv_rQ308.jpg"],"timeIn":"2019-05-20 11:00:00","parkingActId":"03testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-20 11:00:00","plateNumber":"测ATE003","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":0.9,"actionCredible":0.9,"carSize":1,"carColor":3,"carLogo":"本田","evt":"evt.car.in","evtGuid":"03testc2-0afd-4c18-9a3b-57e0e4774560","parkingAbnormalType":1}}
+2019-06-12 17:18:36,371 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第14个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:18:36,385 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%03testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.out%';
+断言：测ATE003
+返回：{addtime=2019-06-12 17:18:30.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlOut":"http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0Aw1CESIItAAAAACB9NuY73..jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEIBipAAAAADuz5HU827.bmp","http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0Aw1CESIItAAAAACB9NuY73..jpg"],"timeOut":"2019-05-27 12:00:00","parkingActId":"03testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-27 12:00:00","plateNumber":"测ATE003","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":1.0,"actionCredible":1.0,"carSize":1,"carColor":3,"carLogo":"本田","evt":"evt.car.out","evtGuid":"d50c50bd-4f89-446b-b317-8bd4f33015ce","parkingAbnormalType":0}}
+2019-06-12 17:18:41,388 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第15个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:18:41,404 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%03testc2-0afd-4c18-9a3b-57e0e4774560%'and   json like '%evt.car.complete%';
+断言：测ATE003
+返回：{addtime=2019-06-12 17:18:35.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEKtG0AAAAAMTv_rQ308.jpg","picUrlOut":"http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0Aw1CESIItAAAAACB9NuY73..jpg","picUrlArrIn":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEIBipAAAAADuz5HU827.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEKAfMAAAAAKY-u3Q960.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEKtG0AAAAAMTv_rQ308.jpg"],"picUrlArrOut":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bbWEIBipAAAAADuz5HU827.bmp","http://172.18.20.198:8880//group1/M00/00/2F/rBIUxl0Aw1CESIItAAAAACB9NuY73..jpg"],"timeIn":"2019-05-20 11:00:00","timeOut":"2019-05-27 12:00:00","carInStatus":1,"carOutStatus":1,"parkingActId":"03testc2-0afd-4c18-9a3b-57e0e4774560","happenTime":"2019-05-27 12:00:00","plateNumber":"测ATE003","plateColor":1,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","geo":"0 0","evt":"evt.car.complete","evtGuid":"a7b06943-4cf5-4277-b8f0-55097da38893","parkingAbnormalType":1}}
+2019-06-12 17:18:46,405 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第16个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:18:46,419 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%03testc2-0afd-4c18-9a3b-57e0e4774560%'  and   json like '%artificial%';
+断言：Ningbo_123
+返回：{addtime=2019-06-12 17:18:33.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"targetEvtGuid":"d50c50bd-4f89-446b-b317-8bd4f33015ce","targetEvtType":"evt.car.out","parkingActId":"03testc2-0afd-4c18-9a3b-57e0e4774560","userType":1,"userCode":"Ningbo_123","userName":"外部管理员：Ningbo_123","evt":"evt.artificial","evtGuid":"8b9dc699-b667-483d-9f37-6451918b9bba"}}
+2019-06-12 17:18:51,420 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第17个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:18:53,474 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+ "sn":"WEIJL-1-L01",
+ "mac":"WEIJL-MAC-L01",
+ "guid":"04testc2-0afd-4c18-9a3b-57e0e4774560",
+ "deviceBerthCode":"1000001",
+ "inoutType":"1",
+ "plateNumber":"测ATE004",
+ "plateColor":"1",
+ "carColor":"3",
+ "carStyle":"1款",
+ "carLogo":"本田",
+ "carType":"1",
+ "carSize":"1",
+ "inoutTime":"2019-5-20 11:00:00",
+ "plateCredible":"0.9",
+ "actionCredible":"0.9",
+ "memo":"新框架测试",
+ "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:18:55,548 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第18个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:18:57,622 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/manualCarOut/cancelCarInData.htm
+Body：
+{"guid":"04testc2-0afd-4c18-9a3b-57e0e4774560"}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:18:57,623 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第19个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:19:02,660 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE    json like '%artificial%';
+断言：superadmin
+返回：{addtime=2019-06-12 17:18:58.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"targetEvtGuid":"5ccab585-743b-49f0-92cd-91939652c100","targetEvtType":"evt.cancel","userType":0,"userCode":"superadmin","userName":"超级用户","evt":"evt.artificial","evtGuid":"28c63184-d495-4b14-8a13-5c5ff24b5a8c"}}
+2019-06-12 17:19:07,664 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第20个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:19:09,701 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+ "sn":"WEIJL-1-L01",
+ "mac":"WEIJL-MAC-L01",
+ "guid":"05testc2-0afd-4c18-9a3b-57e0e4774560",
+ "deviceBerthCode":"1000001",
+ "inoutType":"1",
+ "plateNumber":"测ATE005",
+ "plateColor":"1",
+ "carColor":"3",
+ "carStyle":"1款",
+ "carLogo":"本田",
+ "carType":"1",
+ "carSize":"1",
+ "inoutTime":"2019-5-20 11:00:00",
+ "plateCredible":"0.9",
+ "actionCredible":"0.9",
+ "memo":"新框架测试",
+ "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:19:11,799 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第21个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:19:13,860 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/manualCarOut/cancelCarInData.htm
+Body：
+{"userCode":"Ningbo_12388","guid":"05testc2-0afd-4c18-9a3b-57e0e4774560"}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:19:13,862 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第22个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:19:13,886 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE    json like '%artificial%';
+断言：Ningbo_12388
+返回：{addtime=2019-06-12 17:19:13.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"targetEvtGuid":"8145c58e-f933-4ddc-ac3b-375f8a93b294","targetEvtType":"evt.cancel","userType":1,"userCode":"Ningbo_12388","userName":"外部管理员：Ningbo_12388","evt":"evt.artificial","evtGuid":"264b40c2-1310-4907-bd70-b0daed5116b2"}}
+2019-06-12 17:19:18,887 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第23个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:19:20,917 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 09:09:04",
+"deviceType":"0",
+"guid": "6e74ede3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测AQ4H52R",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 09:09:04",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是入场"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:19:23,024 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第24个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:19:33,060 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%6e74ede3-1065-4826-b780-9c137da92bcd%'and   json like '%evt.car.in%';
+断言：测AQ4H52R
+返回：{addtime=2019-06-12 17:19:31.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEbXLWAAAAAMTv_rQ622.jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEOHLKAAAAADuz5HU884.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEdXITAAAAAKY-u3Q571.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEbXLWAAAAAMTv_rQ622.jpg"],"timeIn":"2019-05-31 09:09:04","parkingActId":"6e74ede3-1065-4826-b780-9c137da92bcd","happenTime":"2019-05-31 09:09:04","plateNumber":"测AQ4H52R","plateColor":2,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":1.0,"actionCredible":1.0,"carSize":0,"carColor":5,"carLogo":"零垃d1k","evt":"evt.car.in","evtGuid":"6e74ede3-1065-4826-b780-9c137da92bcd","parkingAbnormalType":0}}
+2019-06-12 17:19:38,063 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第25个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:19:40,097 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 11:09:04",
+"deviceType":"0",
+"guid": "7testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"0",
+"plateNumber":"测AQ4H52R",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 11:09:04",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是出场"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:19:42,172 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第26个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:19:52,211 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%7testde3-1065-4826-b780-9c137da92bcd%'and   json like '%evt.car.out%';
+断言：测AQ4H52R
+返回：{addtime=2019-06-12 17:19:51.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlOut":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeESpY_AAAAAMTv_rQ632.jpg","picUrlArr":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeEDNBsAAAAADuz5HU138.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeEKx0hAAAAAKY-u3Q327.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeESpY_AAAAAMTv_rQ632.jpg"],"timeOut":"2019-05-31 11:09:04","parkingActId":"6e74ede3-1065-4826-b780-9c137da92bcd","happenTime":"2019-05-31 11:09:04","plateNumber":"测AQ4H52R","plateColor":2,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","plateCredible":1.0,"actionCredible":1.0,"carSize":0,"carColor":5,"carLogo":"零垃d1k","evt":"evt.car.out","evtGuid":"7testde3-1065-4826-b780-9c137da92bcd","parkingAbnormalType":0}}
+2019-06-12 17:19:57,212 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第27个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:19:57,227 INFO [com.parking_1x.utils.BasePost] - 
+模拟器
+Body：SELECT * FROM "public"."jsontable" WHERE json like '%测AQ4H52R%'and   json like '%evt.car.complete%';
+断言：测AQ4H52R
+返回：{addtime=2019-06-12 17:19:56.0, response={"errorcode":"0","message":"执行成功","memo":"哟哟哟","data":null}, json={"picUrlIn":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEbXLWAAAAAMTv_rQ622.jpg","picUrlOut":"http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeESpY_AAAAAMTv_rQ632.jpg","picUrlArrIn":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEOHLKAAAAADuz5HU884.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEdXITAAAAAKY-u3Q571.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bfSEbXLWAAAAAMTv_rQ622.jpg"],"picUrlArrOut":["http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeEDNBsAAAAADuz5HU138.bmp","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeEKx0hAAAAAKY-u3Q327.jpg","http://172.18.20.198:8880//group1/M00/00/1E/rBIUxlz_bgeESpY_AAAAAMTv_rQ632.jpg"],"timeIn":"2019-05-31 09:09:04","timeOut":"2019-05-31 11:09:04","carInStatus":1,"carOutStatus":1,"parkingActId":"6e74ede3-1065-4826-b780-9c137da92bcd","happenTime":"2019-05-31 11:09:04","plateNumber":"测AQ4H52R","plateColor":2,"parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","berthCode":"1000001","deviceSn":"WEIJL-1-L01","geo":"0 0","evt":"evt.car.complete","evtGuid":"7389bc42-7622-425d-91b7-63ebde1c8d29","parkingAbnormalType":0}}
+2019-06-12 17:20:02,229 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第28个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:04,273 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测AQ4H52R"
+}
+断言：测AQ4H52R
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":2,"rows":[{"id":"7testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":0,"inoutTime":"2019-05-31 11:09:04","plateNumber":"测AQ4H52R","plateColor":2,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bgeEKx0hAAAAAKY-u3Q327.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bgeESpY_AAAAAMTv_rQ632.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bgeEDNBsAAAAADuz5HU138.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是出场","recordTime":"2019-06-12 17:19:27","confirmType":0,"confirmTime":"2019-06-12 17:19:27","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 17:19:40","parkingAbnormalType":0},{"id":"6e74ede3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 09:09:04","plateNumber":"测AQ4H52R","plateColor":2,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bfSEdXITAAAAAKY-u3Q571.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bfSEbXLWAAAAAMTv_rQ622.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bfSEOHLKAAAAADuz5HU884.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是入场","recordTime":"2019-06-12 17:19:08","confirmType":0,"confirmTime":"2019-06-12 17:19:08","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 17:19:20","parkingAbnormalType":0}]}}
+2019-06-12 17:20:04,275 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第29个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:06,309 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 15:16:17",
+"deviceType":"0",
+"guid": "10testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"无车牌",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 15:16:17",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是无车牌"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:20:08,381 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第30个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:10,433 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"WEIJL-1-L01"
+}
+断言：15:16:17
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"10testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 15:16:17","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bieEBMAEAAAAAKY-u3Q818.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bieECNdoAAAAAMTv_rQ023.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bieEUfb_AAAAADuz5HU598.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无车牌","recordTime":"2019-06-12 17:19:53","confirmType":0,"confirmTime":"2019-06-12 17:19:53","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 17:20:10,435 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第31个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:12,472 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 16:16:18",
+"deviceType":"0",
+"guid": "11testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"无牌车",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 16:16:18",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是无牌车"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:20:14,537 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第32个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:16,573 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"WEIJL-1-L01"
+}
+断言：16:16:18
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":2,"rows":[{"id":"11testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 16:16:18","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bi2EOwS7AAAAAKY-u3Q938.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bi2EYcUfAAAAAMTv_rQ689.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bi2Edjz5AAAAADuz5HU210.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 17:19:59","confirmType":0,"confirmTime":"2019-06-12 17:19:59","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"10testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 15:16:17","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bieEBMAEAAAAAKY-u3Q818.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bieECNdoAAAAAMTv_rQ023.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bieEUfb_AAAAADuz5HU598.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无车牌","recordTime":"2019-06-12 17:19:53","confirmType":0,"confirmTime":"2019-06-12 17:19:53","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 17:20:16,575 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第33个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:18,606 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 17:18:19",
+"deviceType":"0",
+"guid": "12testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 17:18:19",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是无牌车"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:20:20,676 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第34个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:22,728 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"WEIJL-1-L01"
+}
+断言： 17:18:19
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":3,"rows":[{"id":"12testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 17:18:19","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bjOEfaSWAAAAAKY-u3Q677.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bjOENzVrAAAAAMTv_rQ573.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bjOEMN25AAAAADuz5HU096.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 17:20:05","confirmType":0,"confirmTime":"2019-06-12 17:20:05","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"11testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 16:16:18","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bi2EOwS7AAAAAKY-u3Q938.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bi2EYcUfAAAAAMTv_rQ689.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bi2Edjz5AAAAADuz5HU210.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 17:19:59","confirmType":0,"confirmTime":"2019-06-12 17:19:59","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"10testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 15:16:17","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bieEBMAEAAAAAKY-u3Q818.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bieECNdoAAAAAMTv_rQ023.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bieEUfb_AAAAADuz5HU598.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无车牌","recordTime":"2019-06-12 17:19:53","confirmType":0,"confirmTime":"2019-06-12 17:19:53","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 17:20:06","parkingAbnormalType":0}]}}
+2019-06-12 17:20:22,733 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第35个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:24,767 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 18:19:20",
+"deviceType":"0",
+"guid": "13testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":null,
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 18:19:20",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是无牌车"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:20:26,827 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第36个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:28,868 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"WEIJL-1-L01"
+}
+断言：18:19:20
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":4,"rows":[{"id":"13testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 18:19:20","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bjmEK8FiAAAAAKY-u3Q455.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bjmENU8nAAAAAMTv_rQ449.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bjmEDnocAAAAADuz5HU034.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 17:20:12","confirmType":0,"confirmTime":"2019-06-12 17:20:12","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"12testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 17:18:19","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bjOEfaSWAAAAAKY-u3Q677.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bjOENzVrAAAAAMTv_rQ573.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bjOEMN25AAAAADuz5HU096.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 17:20:05","confirmType":0,"confirmTime":"2019-06-12 17:20:05","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"11testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 16:16:18","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bi2EOwS7AAAAAKY-u3Q938.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bi2EYcUfAAAAAMTv_rQ689.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bi2Edjz5AAAAADuz5HU210.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 17:19:59","confirmType":0,"confirmTime":"2019-06-12 17:19:59","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 17:20:11","parkingAbnormalType":0},{"id":"10testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 15:16:17","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bieEBMAEAAAAAKY-u3Q818.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bieECNdoAAAAAMTv_rQ023.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bieEUfb_AAAAADuz5HU598.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无车牌","recordTime":"2019-06-12 17:19:53","confirmType":0,"confirmTime":"2019-06-12 17:19:53","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 17:20:06","parkingAbnormalType":0}]}}
+2019-06-12 17:20:28,875 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第37个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:30,916 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 19:20:21",
+"deviceType":"0",
+"guid": "14testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 19:20:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是无牌车"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:20:32,977 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第38个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:35,010 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"WEIJL-1-L01"
+}
+断言：19:20:21
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":5,"rows":[{"id":"14testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 19:20:21","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bj-Ebj4zAAAAAKY-u3Q183.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bj-EO1TfAAAAAMTv_rQ843.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bj-EIbKQAAAAADuz5HU076.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 17:20:18","confirmType":0,"confirmTime":"2019-06-12 17:20:18","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"13testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 18:19:20","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bjmEK8FiAAAAAKY-u3Q455.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bjmENU8nAAAAAMTv_rQ449.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bjmEDnocAAAAADuz5HU034.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 17:20:12","confirmType":0,"confirmTime":"2019-06-12 17:20:12","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0},{"id":"12testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 17:18:19","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bjOEfaSWAAAAAKY-u3Q677.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bjOENzVrAAAAAMTv_rQ573.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bjOEMN25AAAAADuz5HU096.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 17:20:05","confirmType":0,"confirmTime":"2019-06-12 17:20:05","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 17:20:16","parkingAbnormalType":0},{"id":"11testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 16:16:18","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bi2EOwS7AAAAAKY-u3Q938.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bi2EYcUfAAAAAMTv_rQ689.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bi2Edjz5AAAAADuz5HU210.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 17:19:59","confirmType":0,"confirmTime":"2019-06-12 17:19:59","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 17:20:11","parkingAbnormalType":0},{"id":"10testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 15:16:17","plateNumber":"无:WEIJL-1-L01:1000001","plateColor":0,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bieEBMAEAAAAAKY-u3Q818.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bieECNdoAAAAAMTv_rQ023.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bieEUfb_AAAAADuz5HU598.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无车牌","recordTime":"2019-06-12 17:19:53","confirmType":0,"confirmTime":"2019-06-12 17:19:53","confirmUserId":null,"confirmUserName":null,"sendStatus":1,"sendTime":"2019-06-12 17:20:06","parkingAbnormalType":0}]}}
+2019-06-12 17:20:35,015 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第39个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:37,047 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 20:20:21",
+"deviceType":"0",
+"guid": "15testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A12345678",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 20:20:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"车"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:20:39,111 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第40个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:41,148 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A12345678"
+}
+断言：测A12345678
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"15testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 20:20:21","plateNumber":"测A12345678","plateColor":2,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bkWEFxRDAAAAAKY-u3Q363.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bkWEZzTgAAAAAMTv_rQ091.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bkWERAKSAAAAADuz5HU005.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"车","recordTime":"2019-06-12 17:20:24","confirmType":0,"confirmTime":"2019-06-12 17:20:24","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 17:20:41,150 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第41个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:43,181 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 21:20:21",
+"deviceType":"0",
+"guid": "16testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A22223",
+"plateColor":"2",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 21:20:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:20:45,249 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第42个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:47,287 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"A22223",
+     "plateColor":2
+}
+断言：测A22223
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"16testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 21:20:21","plateNumber":"测A22223","plateColor":2,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_bkuEOt4pAAAAAKY-u3Q832.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_bkuEHvydAAAAAMTv_rQ393.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_bkuEXOqrAAAAADuz5HU872.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"","recordTime":"2019-06-12 17:20:30","confirmType":0,"confirmTime":"2019-06-12 17:20:30","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 17:20:47,292 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第43个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:49,337 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 22:20:21",
+"deviceType":"0",
+"guid": "17testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A22243",
+"plateColor":"15",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 22:20:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":"我是无牌车"
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:20:51,404 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第44个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:53,467 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A22243"
+
+}
+断言：测A22243
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"17testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 22:20:21","plateNumber":"测A22243","plateColor":15,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_blKEQ8XiAAAAAKY-u3Q205.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_blKEQkc6AAAAAMTv_rQ155.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_blKEFSoHAAAAADuz5HU594.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"我是无牌车","recordTime":"2019-06-12 17:20:36","confirmType":0,"confirmTime":"2019-06-12 17:20:36","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 17:20:53,472 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第45个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:55,514 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:20:21",
+"deviceType":"0",
+"guid": "18testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A44456",
+"plateColor":"中文",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 23:20:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"上传json数据解释出错!","memo":null,"data":null}
+2019-06-12 17:20:57,587 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第46个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:20:59,625 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A44456"
+
+}
+断言：测A44456
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 17:20:59,626 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第47个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:01,654 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "19testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A44457",
+"plateColor":"EnglishTest",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 23:21:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"上传json数据解释出错!","memo":null,"data":null}
+2019-06-12 17:21:03,717 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第48个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:05,754 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A44457"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 17:21:05,758 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第49个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:07,787 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "20testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A44458",
+"plateColor":"#￥%……&",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 23:21:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"上传json数据解释出错!","memo":null,"data":null}
+2019-06-12 17:21:09,855 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第50个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:11,891 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A44458"
+
+}
+断言：A44458
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 17:21:11,893 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第51个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:13,916 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "21testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A44460",
+"plateColor":"",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 23:21:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"上传json数据解释出错!","memo":null,"data":null}
+2019-06-12 17:21:15,984 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第52个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:18,018 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A44460"
+
+}
+断言：测A44460
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 17:21:18,021 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第53个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:20,058 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "22testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A44461",
+"plateColor":null,
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 23:21:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:21:22,116 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第54个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:24,151 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A44461"
+
+}
+断言：测A44461
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"22testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 23:21:21","plateNumber":"测A44461","plateColor":null,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_cFGEFtxMAAAAAKY-u3Q340.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_cFGEQA03AAAAAMTv_rQ374.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_cFGEFWJ3AAAAADuz5HU464.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"","recordTime":"2019-06-12 17:21:07","confirmType":0,"confirmTime":"2019-06-12 17:21:07","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 17:21:24,152 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第55个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:26,184 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "23testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A44462",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-05-31 23:21:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-12 17:21:28,252 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第56个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:30,298 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A44462"
+
+}
+断言：测A44462
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"23testde3-1065-4826-b780-9c137da92bcd","parkingCode":"WeijlT001","parkingName":"weijl测试停车区1","deviceRodCode":"","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL双枪","deviceType":"1","berthCode":"1000001","berthName":"weijl1号泊位","inoutType":1,"inoutTime":"2019-05-31 23:21:21","plateNumber":"测A44462","plateColor":null,"carColor":5,"carStyle":"k款款架款","carlogo":"零垃d1k","carType":"5","carSize":0,"fullImg":"/group1/M00/00/1E/rBIUxlz_cFeEUqKGAAAAAKY-u3Q117.jpg","featureImg":"/group1/M00/00/1E/rBIUxlz_cFeEajxuAAAAAMTv_rQ988.jpg","plateImg":"/group1/M00/00/1E/rBIUxlz_cFeEDptkAAAAADuz5HU020.bmp","plateCredible":1.0,"actionCredible":1.0,"memo":"","recordTime":"2019-06-12 17:21:13","confirmType":0,"confirmTime":"2019-06-12 17:21:13","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-12 17:21:30,299 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第57个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:32,327 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "24testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A88824",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"2019-0x5-31 23:21:21",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"上传json数据解释出错!","memo":null,"data":null}
+2019-06-12 17:21:34,391 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第58个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:36,425 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A88824"
+
+}
+断言：测A88824
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 17:21:36,426 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第59个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:38,452 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "24testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A88824",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":"",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"上传json数据解释出错!","memo":null,"data":null}
+2019-06-12 17:21:40,513 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第60个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:42,548 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A88824"
+
+}
+断言：测A88824
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 17:21:42,550 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第61个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:44,572 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "24testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A88824",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"inoutTime不能为空!","memo":null,"data":null}
+2019-06-12 17:21:46,642 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第62个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:48,691 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A88824"
+
+}
+断言：测A88824
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 17:21:48,693 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第63个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:50,719 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+"sn": "WEIJL-1-L01",
+"mac": "WEIJL-MAC-L01",
+"deviceTime":"2019-05-31 23:21:21",
+"deviceType":"0",
+"guid": "24testde3-1065-4826-b780-9c137da92bcd",
+"deviceBerthCode":"1000001",
+"inoutType":"1",
+"plateNumber":"测A88824",
+"carColor":"5",
+"carStyle":"k款款架款",
+"carLogo":"零垃d1k",
+"carType":"5",
+"carSize":"0",
+"inoutTime":null,
+"plateCredible":"1",
+"actionCredible":"1",
+"parkingAbnormalType":"0",
+"memo":""
+}
+
+断言：执行成功
+返回：{"errorcode":"3","message":"inoutTime不能为空!","memo":null,"data":null}
+2019-06-12 17:21:52,781 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第64个用例：~~~~~~~~~~~~
+
+
+2019-06-12 17:21:54,819 INFO [com.parking_1x.utils.BasePost] - 
+路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测A88824"
+
+}
+断言：测A88824
+返回：{"errorcode":"0","message":"暂无相关数据","memo":null,"data":null}
+2019-06-12 17:21:54,870 INFO [com.parking_1x.Runjar] - 
+
+~~~~~~~~~~~~测试完成，报告请查看：report目录，请直接关闭窗口~~~~~~~~~~~~

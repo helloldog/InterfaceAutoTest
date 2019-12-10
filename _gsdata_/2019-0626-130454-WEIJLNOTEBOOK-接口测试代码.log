@@ -1,0 +1,20 @@
+2019-06-26 13:04:55: -- 分析开始 Periodic Timer
+2019-06-26 13:04:56: 变更：14， 冲突：0， 复制时间：0， 复制状态：0， 错误： 0, All: 193
+2019-06-26 13:04:56: Left to Right: Copy File: 14 
+2019-06-26 13:04:56: == 同步开始由 Periodic Timer
+2019-06-26 13:04:56: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/.idea/workspace.xml' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/.idea/workspace.xml' (86,830)
+2019-06-26 13:04:56: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/logs/Test.log' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/logs/Test.log' (269,151)
+2019-06-26 13:04:57: 新建复制 'E:/src/interfaceTest/InterfaceTestAutoParking/logs/Test.log.2019-06-25' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/logs/Test.log.2019-06-25' (414,768)
+2019-06-26 13:04:57: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/report/20190625174021-Case2_1.3.4-自动用例报告.html' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/report/20190625174021-Case2_1.3.4-自动用例报告.html' (1,370)
+2019-06-26 13:04:57: 新建复制 'E:/src/interfaceTest/InterfaceTestAutoParking/report/20190626092304-Case1_basic1-自动用例报告.html' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/report/20190626092304-Case1_basic1-自动用例报告.html' (9,497)
+2019-06-26 13:04:57: 新建复制 'E:/src/interfaceTest/InterfaceTestAutoParking/report/20190626092711-Case2_1.3.4-自动用例报告.html' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/report/20190626092711-Case2_1.3.4-自动用例报告.html' (1,462)
+2019-06-26 13:04:57: 新建复制 'E:/src/interfaceTest/InterfaceTestAutoParking/report/20190626112953-Case1_basic1-自动用例报告.html' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/report/20190626112953-Case1_basic1-自动用例报告.html' (9,497)
+2019-06-26 13:04:57: 新建复制 'E:/src/interfaceTest/InterfaceTestAutoParking/report/20190626113317-Case2_1.3.4-自动用例报告.html' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/report/20190626113317-Case2_1.3.4-自动用例报告.html' (1,462)
+2019-06-26 13:04:58: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/src/main/java/com/parking_1x/Runjar.java' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/src/main/java/com/parking_1x/Runjar.java' (4,787)
+2019-06-26 13:04:58: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/src/main/java/com/parking_1x/utils/BaseLib.java' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/src/main/java/com/parking_1x/utils/BaseLib.java' (9,905)
+2019-06-26 13:04:58: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/src/main/java/com/parking_1x/utils/BasePost.java' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/src/main/java/com/parking_1x/utils/BasePost.java' (10,026)
+2019-06-26 13:04:59: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/target/classes/com/parking_1x/Runjar.class' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/target/classes/com/parking_1x/Runjar.class' (5,521)
+2019-06-26 13:04:59: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/target/classes/com/parking_1x/utils/BaseLib.class' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/target/classes/com/parking_1x/utils/BaseLib.class' (9,404)
+2019-06-26 13:04:59: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/target/classes/com/parking_1x/utils/BasePost.class' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/target/classes/com/parking_1x/utils/BasePost.class' (7,249)
+2019-06-26 13:05:00: == 同步完成. 历时: 00:00:04, 速度: 282 KB/s, 完成: 14, 错误: 0
+2019-06-26 13:05:00: 

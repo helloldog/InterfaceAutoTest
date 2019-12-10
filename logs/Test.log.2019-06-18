@@ -1,0 +1,379 @@
+2019-06-18 17:37:50,642 INFO [com.parking_1x.Runjar] - 测试地址是：http://172.18.2.200:8090
+2019-06-18 17:37:50,647 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~开始测试~~~~~~~~~~~~
+2019-06-18 17:37:50,647 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第1/121个Case：~~~~~~~~~~~~
+2019-06-18 17:37:52,706 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_collect_entry/deviceUpload/carPass.htm
+Body：
+{
+ "sn":"WEIJL-1-L02",
+ "mac":"WEIJL-MAC-L02",
+ "guid":"01testc2-0afd-4c18-9a3b-57e0e4774560",
+ "deviceBerthCode":"1000002",
+ "inoutType":"1",
+ "plateNumber":"测ATE001",
+ "plateColor":"1",
+ "carColor":"3",
+ "carStyle":"1款",
+ "carLogo":"本田",
+ "carType":"1",
+ "carSize":"1",
+ "inoutTime":"2019-06-17  11:00:00",
+ "plateCredible":"0.1",
+ "actionCredible":"0.9",
+ "memo":"新框架测试",
+ "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":null}
+2019-06-18 17:37:54,853 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第2/121个Case：~~~~~~~~~~~~
+2019-06-18 17:37:57,004 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_business_entry/inorout/confirmCarData.htm
+Body：
+{
+    "id":"01testc2-0afd-4c18-9a3b-57e0e4774560",
+    "plateNumberModify":"测ATE001",
+    "plateColorModify":1,
+    "berthCode":"1000002",
+    "confirmType":0,
+    "isForce":"0",
+    "dataType":0,
+    "parkingAbnormalType":"1"
+}
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":"审核成功！","data":[]}
+2019-06-18 17:37:57,004 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第3/121个Case：~~~~~~~~~~~~
+2019-06-18 17:39:06,701 INFO [com.parking_1x.Runjar] - 测试地址是：http://172.18.2.200:8090
+2019-06-18 17:39:06,702 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~开始测试~~~~~~~~~~~~
+2019-06-18 17:39:06,702 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第1/3个Case：~~~~~~~~~~~~
+2019-06-18 17:39:13,254 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_collect_entry/deviceUpload/berthParkingSituation.htm
+Body：
+{
+    "sn": "WEIJL-1-L01",
+    "mac": "WEIJL-MAC-L01",
+    "guid": "73606af4-0ce4-4ea7-9aac-4a9e51b6a588",
+    "berthCode":"1000002",
+    "parkingStatus":"1",
+    "plateNumber":"测C13401",
+    "plateColor":"1",
+    "carColor":"1",
+    "carStyle":"car的freestyle",
+    "carLogo":"思域",
+    "carType":"1",
+    "carSize":"1",
+    "snapTime":"2019-06-18   17:39:06",
+    "credible":"1",
+    "parkingAbnormalType":"0",
+    "memo":"嗨"
+    
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"isUploadPic":0}}
+2019-06-18 17:39:15,464 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第2/3个Case：~~~~~~~~~~~~
+2019-06-18 17:40:15,465 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第3/3个Case：~~~~~~~~~~~~
+2019-06-18 17:43:23,599 INFO [com.parking_1x.Runjar] - 测试地址是：http://172.18.2.200:8090
+2019-06-18 17:43:23,602 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~开始测试~~~~~~~~~~~~
+2019-06-18 17:43:23,602 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第1/3个Case：~~~~~~~~~~~~
+2019-06-18 17:43:29,819 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_collect_entry/deviceUpload/berthParkingSituation.htm
+Body：
+{
+    "sn": "WEIJL-1-L01",
+    "mac": "WEIJL-MAC-L01",
+    "guid": "d6bc3de7-abfc-4da1-89d7-68728ec93ef9",
+    "berthCode":"1000002",
+    "parkingStatus":"1",
+    "plateNumber":"测C13401",
+    "plateColor":"1",
+    "carColor":"1",
+    "carStyle":"car的freestyle",
+    "carLogo":"思域",
+    "carType":"1",
+    "carSize":"1",
+    "snapTime":"2019-06-18   17:43:23",
+    "credible":"1",
+    "parkingAbnormalType":"0",
+    "memo":"嗨"
+    
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"isUploadPic":0}}
+2019-06-18 17:43:32,015 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第2/3个Case：~~~~~~~~~~~~
+2019-06-18 17:43:32,015 INFO [com.parking_1x.Runjar] - 等待60秒
+2019-06-18 17:44:32,015 INFO [com.parking_1x.Runjar] - 等待完成
+2019-06-18 17:44:32,015 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第3/3个Case：~~~~~~~~~~~~
+2019-06-18 17:45:53,987 INFO [com.parking_1x.Runjar] - 测试地址是：http://172.18.2.200:8090
+2019-06-18 17:45:53,990 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~开始测试~~~~~~~~~~~~
+2019-06-18 17:45:53,990 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第1/3个Case：~~~~~~~~~~~~
+2019-06-18 17:46:00,234 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_collect_entry/deviceUpload/berthParkingSituation.htm
+Body：
+{
+    "sn": "WEIJL-1-L01",
+    "mac": "WEIJL-MAC-L01",
+    "guid": "734e3aba-07e3-4142-8be9-039fdb2c8755",
+    "berthCode":"1000002",
+    "parkingStatus":"1",
+    "plateNumber":"测C13401",
+    "plateColor":"1",
+    "carColor":"1",
+    "carStyle":"car的freestyle",
+    "carLogo":"思域",
+    "carType":"1",
+    "carSize":"1",
+    "snapTime":"2019-06-18   17:45:53",
+    "credible":"1",
+    "parkingAbnormalType":"0",
+    "memo":"嗨"
+    
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"isUploadPic":0}}
+2019-06-18 17:46:02,419 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第2/3个Case：~~~~~~~~~~~~
+2019-06-18 17:46:02,419 INFO [com.parking_1x.Runjar] - 等待60秒
+2019-06-18 17:46:38,062 INFO [com.parking_1x.Runjar] - 测试地址是：http://172.18.2.200:8090
+2019-06-18 17:46:38,064 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~开始测试~~~~~~~~~~~~
+2019-06-18 17:46:38,064 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第1/3个Case：~~~~~~~~~~~~
+2019-06-18 17:46:44,309 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_collect_entry/deviceUpload/berthParkingSituation.htm
+Body：
+{
+    "sn": "WEIJL-1-L01",
+    "mac": "WEIJL-MAC-L01",
+    "guid": "4d13be9f-387c-43de-a074-bbecdab4ed23",
+    "berthCode":"1000002",
+    "parkingStatus":"1",
+    "plateNumber":"测C13401",
+    "plateColor":"1",
+    "carColor":"1",
+    "carStyle":"car的freestyle",
+    "carLogo":"思域",
+    "carType":"1",
+    "carSize":"1",
+    "snapTime":"2019-06-18   17:46:38",
+    "credible":"1",
+    "parkingAbnormalType":"0",
+    "memo":"嗨"
+    
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"isUploadPic":1}}
+2019-06-18 17:46:46,518 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第2/3个Case：~~~~~~~~~~~~
+2019-06-18 17:46:46,518 INFO [com.parking_1x.Runjar] - 等待60秒
+2019-06-18 17:47:13,836 INFO [com.parking_1x.Runjar] - 测试地址是：http://172.18.2.200:8090
+2019-06-18 17:47:13,837 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~开始测试~~~~~~~~~~~~
+2019-06-18 17:47:13,837 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第1/3个Case：~~~~~~~~~~~~
+2019-06-18 17:47:20,057 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_collect_entry/deviceUpload/berthParkingSituation.htm
+Body：
+{
+    "sn": "WEIJL-1-L01",
+    "mac": "WEIJL-MAC-L01",
+    "guid": "fc50f6c6-2d9e-4548-b265-8e62b7761042",
+    "berthCode":"1000002",
+    "parkingStatus":"1",
+    "plateNumber":"测C13401",
+    "plateColor":"1",
+    "carColor":"1",
+    "carStyle":"car的freestyle",
+    "carLogo":"思域",
+    "carType":"1",
+    "carSize":"1",
+    "snapTime":"2019-06-18   17:47:13",
+    "credible":"1",
+    "parkingAbnormalType":"0",
+    "memo":"嗨"
+    
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"isUploadPic":1}}
+2019-06-18 17:47:22,261 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第2/3个Case：~~~~~~~~~~~~
+2019-06-18 17:47:22,261 INFO [com.parking_1x.Runjar] - 等待5秒
+2019-06-18 17:47:27,262 INFO [com.parking_1x.Runjar] - 等待完成
+2019-06-18 17:47:27,262 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第3/3个Case：~~~~~~~~~~~~
+2019-06-18 17:48:36,274 INFO [com.parking_1x.Runjar] - 测试地址是：http://172.18.2.200:8090
+2019-06-18 17:48:36,276 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~开始测试~~~~~~~~~~~~
+2019-06-18 17:48:36,276 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第1/3个Case：~~~~~~~~~~~~
+2019-06-18 17:48:42,492 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_collect_entry/deviceUpload/berthParkingSituation.htm
+Body：
+{
+    "sn": "WEIJL-1-L01",
+    "mac": "WEIJL-MAC-L01",
+    "guid": "e590df3a-9671-4729-bde4-3df031df8118",
+    "berthCode":"1000002",
+    "parkingStatus":"1",
+    "plateNumber":"测C13401",
+    "plateColor":"1",
+    "carColor":"1",
+    "carStyle":"car的freestyle",
+    "carLogo":"思域",
+    "carType":"1",
+    "carSize":"1",
+    "snapTime":"2019-06-18   17:48:36",
+    "credible":"1",
+    "parkingAbnormalType":"0",
+    "memo":"嗨"
+    
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"isUploadPic":1}}
+2019-06-18 17:48:44,685 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第2/3个Case：~~~~~~~~~~~~
+2019-06-18 17:48:44,685 INFO [com.parking_1x.Runjar] - 等待5秒
+2019-06-18 17:48:49,685 INFO [com.parking_1x.Runjar] - 等待完成
+2019-06-18 17:48:49,685 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第3/3个Case：~~~~~~~~~~~~
+2019-06-18 17:52:26,100 INFO [com.parking_1x.Runjar] - 测试地址是：http://172.18.2.200:8090
+2019-06-18 17:52:26,102 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~开始测试~~~~~~~~~~~~
+2019-06-18 17:52:26,103 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第1/3个Case：~~~~~~~~~~~~
+2019-06-18 17:52:32,292 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_collect_entry/deviceUpload/berthParkingSituation.htm
+Body：
+{
+    "sn": "WEIJL-1-L01",
+    "mac": "WEIJL-MAC-L01",
+    "guid": "7eab19a0-a4bc-4ebf-a5b7-da14d6b6d902",
+    "berthCode":"1000002",
+    "parkingStatus":"1",
+    "plateNumber":"测C13401",
+    "plateColor":"1",
+    "carColor":"1",
+    "carStyle":"car的freestyle",
+    "carLogo":"思域",
+    "carType":"1",
+    "carSize":"1",
+    "snapTime":"2019-06-18   17:52:26",
+    "credible":"1",
+    "parkingAbnormalType":"0",
+    "memo":"嗨"
+    
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"isUploadPic":0}}
+2019-06-18 17:52:34,479 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第2/3个Case：~~~~~~~~~~~~
+2019-06-18 17:52:34,479 INFO [com.parking_1x.Runjar] - 等待5秒
+2019-06-18 17:52:39,480 INFO [com.parking_1x.Runjar] - 等待完成
+2019-06-18 17:52:39,480 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第3/3个Case：~~~~~~~~~~~~
+2019-06-18 17:53:06,435 INFO [com.parking_1x.Runjar] - 测试地址是：http://172.18.2.200:8090
+2019-06-18 17:53:06,437 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~开始测试~~~~~~~~~~~~
+2019-06-18 17:53:06,437 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第1/3个Case：~~~~~~~~~~~~
+2019-06-18 17:53:12,648 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_collect_entry/deviceUpload/berthParkingSituation.htm
+Body：
+{
+    "sn": "WEIJL-1-L01",
+    "mac": "WEIJL-MAC-L01",
+    "guid": "5464b760-9d98-4af5-9c02-df42c3c4c1d7",
+    "berthCode":"1000002",
+    "parkingStatus":"1",
+    "plateNumber":"测C13401",
+    "plateColor":"1",
+    "carColor":"1",
+    "carStyle":"car的freestyle",
+    "carLogo":"思域",
+    "carType":"1",
+    "carSize":"1",
+    "snapTime":"2019-06-18   17:53:06",
+    "credible":"1",
+    "parkingAbnormalType":"0",
+    "memo":"嗨"
+    
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"isUploadPic":1}}
+2019-06-18 17:53:15,027 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第2/3个Case：~~~~~~~~~~~~
+2019-06-18 17:53:15,028 INFO [com.parking_1x.Runjar] - 等待5秒
+2019-06-18 17:53:20,029 INFO [com.parking_1x.Runjar] - 等待完成
+2019-06-18 17:53:20,030 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第3/3个Case：~~~~~~~~~~~~
+2019-06-18 17:53:32,549 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_collect_entry/deviceUpload/berthParkingSituation.htm
+Body：
+{
+    "sn": "WEIJL-1-L01",
+    "mac": "WEIJL-MAC-L01",
+    "guid": "c46f5350-0fda-4292-87c6-eb1816222c3b",
+    "berthCode":"1000002",
+    "parkingStatus":"1",
+    "plateNumber":"测C13401",
+    "plateColor":"1",
+    "carColor":"1",
+    "carStyle":"car的freestyle",
+    "carLogo":"思域",
+    "carType":"1",
+    "carSize":"1",
+    "snapTime":"2019-06-18   17:53:20",
+    "credible":"1",
+    "parkingAbnormalType":"0",
+    "memo":"嗨"
+    
+}
+
+断言：2019-06-18   17:53:06
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"isUploadPic":0}}
+2019-06-18 17:53:32,551 INFO [com.parking_1x.utils.BasePost] - 用例3失败
+2019-06-18 17:53:45,279 INFO [com.parking_1x.utils.BasePost] - 用例3的图片上传失败
+2019-06-18 17:53:45,349 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~~测试完成，报告请查看：report目录，请直接关闭窗口~~~~~~~~~~~~
+2019-06-18 22:27:34,904 INFO [com.parking_1x.Runjar] - 测试地址是：http://172.18.2.200:8090
+2019-06-18 22:27:34,906 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~开始测试~~~~~~~~~~~~
+2019-06-18 22:27:34,906 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第1/4个Case：~~~~~~~~~~~~
+2019-06-18 22:27:41,124 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_collect_entry/deviceUpload/berthParkingSituation.htm
+Body：
+{
+    "sn": "WEIJL-1-L01",
+    "mac": "WEIJL-MAC-L01",
+    "guid": "92caa553-0332-478c-97db-f04f84610bd2",
+    "berthCode":"1000002",
+    "parkingStatus":"1",
+    "plateNumber":"测C13401",
+    "plateColor":"1",
+    "carColor":"1",
+    "carStyle":"car的freestyle",
+    "carLogo":"思域",
+    "carType":"1",
+    "carSize":"1",
+    "snapTime":"2019-06-18 22:27:34",
+    "credible":"1",
+    "parkingAbnormalType":"0",
+    "memo":"嗨"
+    
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"isUploadPic":0}}
+2019-06-18 22:27:43,381 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第2/4个Case：~~~~~~~~~~~~
+2019-06-18 22:27:43,381 INFO [com.parking_1x.Runjar] - 等待5秒
+2019-06-18 22:27:48,382 INFO [com.parking_1x.Runjar] - 等待完成
+2019-06-18 22:27:48,382 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第3/4个Case：~~~~~~~~~~~~
+2019-06-18 22:27:54,592 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_collect_entry/deviceUpload/berthParkingSituation.htm
+Body：
+{
+    "sn": "WEIJL-1-L01",
+    "mac": "WEIJL-MAC-L01",
+    "guid": "fab1873b-fc77-448f-ae36-2d1a8da3e942",
+    "berthCode":"1000002",
+    "parkingStatus":"1",
+    "plateNumber":"测C13401",
+    "plateColor":"1",
+    "carColor":"1",
+    "carStyle":"car的freestyle",
+    "carLogo":"思域",
+    "carType":"1",
+    "carSize":"1",
+    "snapTime":"2019-06-18  22:27:48",
+    "credible":"1",
+    "parkingAbnormalType":"0",
+    "memo":"嗨"
+    
+}
+
+断言：执行成功
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"isUploadPic":1}}
+2019-06-18 22:27:56,786 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~第4/4个Case：~~~~~~~~~~~~
+2019-06-18 22:27:58,935 INFO [com.parking_1x.utils.BasePost] - 路径：/parking_business_entry/inorout/listCarInOut.htm
+Body：
+{  
+    "pageNo":1,
+    "pageSize":15,
+    "queryModel":1,
+    "plateNumber":"测C13401"
+
+}
+断言：2019-06-18 22:27:34
+返回：{"errorcode":"0","message":"执行成功","memo":null,"data":{"total":1,"rowsSize":15,"records":1,"rows":[{"id":"fab1873b-fc77-448f-ae36-2d1a8da3e942","parkingCode":"WeijlT002","parkingName":"weijl测试停车区2","deviceRodCode":"1000002","deviceCode":"WEIJL-1-L01","deviceName":"WEIJL扫地机","deviceType":"5","berthCode":"1000002","berthName":"weijl2号泊位","inoutType":1,"inoutTime":"2019-06-18 22:27:34","plateNumber":"测C13401","plateColor":1,"carColor":1,"carStyle":"car的freestyle","carlogo":"思域","carType":"1","carSize":1,"fullImg":null,"featureImg":null,"plateImg":null,"plateCredible":1.0,"actionCredible":null,"memo":"berthParkingSituation","recordTime":"2019-06-18 22:27:48","confirmType":0,"confirmTime":"2019-06-18 22:27:49","confirmUserId":null,"confirmUserName":null,"sendStatus":0,"sendTime":null,"parkingAbnormalType":0}]}}
+2019-06-18 22:27:59,011 INFO [com.parking_1x.Runjar] - ~~~~~~~~~~~~测试完成，报告请查看：report目录，请直接关闭窗口~~~~~~~~~~~~

@@ -1,0 +1,8 @@
+2019-06-25 17:00:50: Cannot move destination file to history folder: //172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/_gsdata_/_saved_/testCases/Case1_basic.xls: 另一个程序正在使用此文件，进程无法访问。  (error 32)
+2019-06-25 17:00:50: ===== Done =====
+2019-06-25 17:00:50: 
+2019-06-25 17:00:52: == 同步开始由 User Command
+2019-06-25 17:00:54: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/testCases/Case1_basic.xls' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/testCases/Case1_basic.xls' (95,232)
+- 错误: Cannot move destination file to history folder: //172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/_gsdata_/_saved_/testCases/Case1_basic.xls: 另一个程序正在使用此文件，进程无法访问。  (error 32)
+2019-06-25 17:00:55: == 同步完成. 历时: 00:00:03, 速度: 46.6 KB/s, 完成: 0, 错误: 1
+2019-06-25 17:00:55: 

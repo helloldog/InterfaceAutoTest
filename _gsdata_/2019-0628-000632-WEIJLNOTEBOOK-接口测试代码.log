@@ -1,0 +1,10 @@
+2019-06-28 00:06:33: -- 分析开始 Periodic Timer
+2019-06-28 00:06:36: 变更：4， 冲突：0， 复制时间：0， 复制状态：0， 错误： 0, All: 308
+2019-06-28 00:06:36: Left to Right: Copy File: 4 
+2019-06-28 00:06:36: == 同步开始由 Periodic Timer
+2019-06-28 00:06:36: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/.idea/workspace.xml' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/.idea/workspace.xml' (79,860)
+2019-06-28 00:06:38: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/out/artifacts/InterfaceTest_jar/InterfaceTest.jar' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/out/artifacts/InterfaceTest_jar/InterfaceTest.jar' (19,110,129)
+2019-06-28 00:06:39: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/src/main/java/com/parking_1x/utils/BasePost.java' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/src/main/java/com/parking_1x/utils/BasePost.java' (11,998)
+2019-06-28 00:06:40: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/target/classes/com/parking_1x/utils/BasePost.class' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/target/classes/com/parking_1x/utils/BasePost.class' (7,982)
+2019-06-28 00:06:40: == 同步完成. 历时: 00:00:04, 速度: 4.57 MB/s, 完成: 4, 错误: 0
+2019-06-28 00:06:40: 

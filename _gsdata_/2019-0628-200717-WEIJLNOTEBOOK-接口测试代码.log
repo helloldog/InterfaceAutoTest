@@ -1,0 +1,23 @@
+2019-06-28 20:07:17: -- 分析开始 Periodic Timer
+2019-06-28 20:07:21: 变更：17， 冲突：0， 复制时间：0， 复制状态：0， 错误： 0, All: 356
+2019-06-28 20:07:21: Left to Right: Copy File: 14 Delete File: 3 
+2019-06-28 20:07:21: == 同步开始由 Periodic Timer
+2019-06-28 20:07:21: 删除文件 '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/report/20190627101931-Case1_basic1-自动用例报告.html'
+2019-06-28 20:07:21: 删除文件 '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/report/20190628102203-Case2_1.3.4-自动用例报告.html'
+2019-06-28 20:07:21: 删除文件 '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/report/20190628135955-Case2_1.3.4-自动用例报告.html'
+2019-06-28 20:07:22: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/.idea/workspace.xml' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/.idea/workspace.xml' (82,092)
+2019-06-28 20:07:22: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/excelData/myTestdevice.xlsx' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/excelData/myTestdevice.xlsx' (10,202)
+2019-06-28 20:07:25: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/out/artifacts/InterfaceTest_jar/InterfaceTest.jar' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/out/artifacts/InterfaceTest_jar/InterfaceTest.jar' (19,742,902)
+2019-06-28 20:07:25: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/src/main/java/com/parking_1x/utils/BasePost.java' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/src/main/java/com/parking_1x/utils/BasePost.java' (11,566)
+2019-06-28 20:07:26: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/target/classes/com/parking_1x/utils/BasePost.class' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/target/classes/com/parking_1x/utils/BasePost.class' (7,853)
+2019-06-28 20:07:26: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/testCases/Case3_1.4.0.xls' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/testCases/Case3_1.4.0.xls' (34,304)
+2019-06-28 20:07:27: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/testCases/不执行/Case2_1.3.4.xls' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/testCases/不执行/Case2_1.3.4.xls' (71,168)
+2019-06-28 20:07:28: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/excelData/myTestdevice.xlsx' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/excelData/myTestdevice.xlsx' (10,181)
+2019-06-28 20:07:30: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/InterfaceTest.jar' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/InterfaceTest.jar' (19,655,527)
+2019-06-28 20:07:30: 覆盖复制 'E:/src/interfaceTest/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/logs/Test.log' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/logs/Test.log' (109,895)
+2019-06-28 20:07:30: 新建复制 'E:/src/interfaceTest/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/report/20190628165731-Case1_basic1-自动用例报告.html' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/report/20190628165731-Case1_basic1-自动用例报告.html' (0)
+2019-06-28 20:07:31: 新建复制 'E:/src/interfaceTest/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/report/20190628170035-Case1_basic1-自动用例报告.html' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/report/20190628170035-Case1_basic1-自动用例报告.html' (0)
+2019-06-28 20:07:31: 新建复制 'E:/src/interfaceTest/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/testCases/Case1_basic1.xls' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/testCases/Case1_basic1.xls' (95,232)
+2019-06-28 20:07:32: 新建复制 'E:/src/interfaceTest/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/testCases/Case3_1.4.0.xls' -> '//172.18.121.121/平台测试/个人目录/weijl/Src/InterfaceTestAutoParking/发布/parking1xTestTool_1.0.0.20190628a/testCases/Case3_1.4.0.xls' (34,304)
+2019-06-28 20:07:32: == 同步完成. 历时: 00:00:11, 速度: 3.46 MB/s, 完成: 17, 错误: 0
+2019-06-28 20:07:32: 
